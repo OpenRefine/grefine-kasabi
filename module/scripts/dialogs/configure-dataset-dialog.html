@@ -1,0 +1,28 @@
+<div class="dialog-frame" style="width: 800px;">
+  <div class="dialog-header" bind="dialogHeader"><img width="20" height="20" src="/extension/kasabi-extension/images/kasabi-logo.png" /> Configure Kasabi Dataset</div>
+  
+  <div class="dialog-body" bind="dialogBody">
+
+	  <p>Configure the Kasabi Dataset you wish to populate from the current project.</p>
+	  <p><input size="80" type="text" id="kasabi-dataset" bind="dataset"></input></p>
+	  
+	  <p>&nbsp;</p>
+	  <p>Configure your API key to authorize uploads to this dataset</p>
+	  <input size="80" type="text" id="kasabi-apikey" bind="apikey"></input>
+	  
+  </div>
+  
+  <div class="dialog-footer" bind="dialogFooter">
+  	<span bind="saveMessage"></span>
+    <table width="100%">
+    <tr>
+      <td bind="left" style="text-align: left" width="40%" nowrap="true">
+      </td>    
+      <td bind="right" style="text-align: right" width="40%" nowrap="true">     
+       	<button bind="saveButton" id="kasabi-connect-save">Save</button>              
+        <button bind="cancelButton" id="kasabi-connect-cancel">Cancel</button>
+      </td>
+    </tr></table>  
+  </div>
+  
+</div>

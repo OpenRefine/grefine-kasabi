@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/grefine-rdf-extension"/>
+	<classpathentry kind="lib" path="/grefine-rdf-extension/module/MOD-INF/lib/openrdf-sesame-2.3.2-onejar.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/grefine"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/grefine-server"/>
+	<classpathentry kind="lib" path="/grefine/webapp/WEB-INF/lib/httpclient-4.0.1.jar" sourcepath="/grefine/webapp/WEB-INF/lib-src/httpclient-4.0.1-sources.jar"/>
+	<classpathentry kind="lib" path="/grefine/webapp/WEB-INF/lib/httpcore-4.0.1.jar" sourcepath="/grefine/webapp/WEB-INF/lib-src/httpcore-4.0.1-sources.jar"/>
+	<classpathentry kind="output" path="module/MOD-INF/classes"/>
+</classpath>
