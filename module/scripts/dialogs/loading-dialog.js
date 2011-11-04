@@ -34,7 +34,7 @@ KasabiLoadingDialog.prototype._dismiss = function() {
 };
 
 KasabiLoadingDialog.prototype._upload = function() {
-	dataset = theProject.overlayModels.kasabiProject.datasetUri;
+	dataset = theProject.overlayModels.kasabiProject.updateUri;
 	apikey = theProject.overlayModels.kasabiProject.apiKey;
 	
 	var self = this;

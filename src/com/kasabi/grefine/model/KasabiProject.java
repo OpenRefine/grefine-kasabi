@@ -68,6 +68,10 @@ public class KasabiProject implements OverlayModel {
 		return datasetURI;
 	}
 	
+	public URI getUpdateURI() {
+		return URI.create( datasetURI.toString().replaceAll("data.kasabi.com", "api.kasabi.com") );
+	}
+	
 	@Override
 	public void write(JSONWriter writer, Properties options)
 			throws JSONException {
@@ -76,9 +80,11 @@ public class KasabiProject implements OverlayModel {
         writer.value(datasetURI);
         writer.key("apiKey");
         writer.value(apiKey);
+        writer.key("updateUri");
+        writer.value(getUpdateURI());        
         writer.endObject();
 	}
-	
+		
 	public static KasabiProject reconstruct(JSONObject o) throws JSONException {
 		KasabiProject project = new KasabiProject();
 		project.setDatasetURI( Util.buildURI(o.getString("datasetUri")) );
